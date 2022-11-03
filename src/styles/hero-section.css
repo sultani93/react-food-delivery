@@ -36,3 +36,15 @@
 .all__foods-btn a {
   color: #df2020;
 }
+.hero__service p {
+  color: #212245;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.shipping__icon i {
+  padding: 5px;
+  color: #fff;
+  background-color: #df2020;
+  border-radius: 50%;
+  font-weight: 500 !important;
+}
