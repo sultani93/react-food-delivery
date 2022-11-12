@@ -24,9 +24,9 @@ const nav_links = [
 ]
 
 const Header = () => {
-  const menuRef = useRef(null)
+  // const menuRef = useRef(null)
 
-  const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+  // const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 
   return (
     <header className='header'>
@@ -38,7 +38,7 @@ const Header = () => {
           </div>
 
           {/* navbar menu */}
-          <div className='navigation' ref={menuRef} onClick={toggleMenu}>
+          <div className='navigation'>
             <div className='menu d-flex align-items-center gap-5'>
               {nav_links.map((item, index) => (
                 <NavLink
@@ -64,7 +64,7 @@ const Header = () => {
                 <i class='ri-user-line'></i>
               </Link>
             </span>
-            <span className='mobile__menu' onClick={toggleMenu}>
+            <span className='mobile__menu'>
               <i className='ri-menu-line'></i>
             </span>
           </div>
